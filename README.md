@@ -1,4 +1,5 @@
-# Japanese City Pop MIDI Controller 🎹🌆- A Deployment Journey
+# Japanese City Pop MIDI Controller 🎹🌆
+A Deployment Journey
 
 ## 🎵 What Is This?
 
