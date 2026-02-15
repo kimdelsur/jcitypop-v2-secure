@@ -1,0 +1,24 @@
+{
+  "name": "jcitypop-midi",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^1.41.0",
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
