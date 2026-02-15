@@ -14,9 +14,12 @@ export class AudioAnalyser extends EventTarget {
     this.freqData = new Uint8Array(this.node.frequencyBinCount);
     this.loop = this.loop.bind(this);
   }
-  getCurrentLevel() {
-    this.node.getByteFrequencyData(this.freqData as Uint8Array);
+ getCurrentLevel() {
+    // @ts-ignore - TypeScript incorrectly flags ArrayBufferLike vs ArrayBuffer
+    this.node.getByteFrequencyData(this.freqData);
     const avg = this.freqData.reduce((a, b) => a + b, 0) / this.freqData.length;
+    return avg / 0xff;
+  }
     return avg / 0xff;
   }
   loop() {
